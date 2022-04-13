@@ -24,20 +24,21 @@ const Home = (props) => {
             <div id="home">
                 <div>
                     {/* Displays the posts stored in the posts state variable */}
-                    <Link
-                        to={`/story/${props.posts[0].id}`}
-                        key={props.posts[0].id}
-                    >
+                    {posts.map(i => {
+                        return(<Link
+                            to={`/story/${i.id}`}
+                            key={i.id}
+                        >
                         <Post
-                            title={props.posts[0].title}
-                            postImage={props.posts[0].postImage}
-                            text={props.posts[0].text}
-                            author={props.posts[0].author}
-                            group={props.posts[0].group}
-                            date={props.posts[0].date}
-                            read_length={props.posts[0].read_length}
+                            title={i.title}
+                            postImage={i.postImage}
+                            text={i.text}
+                            author={i.author}
+                            group={i.group}
+                            date={i.date}
+                            read_length={i.read_length}
                         />
-                    </Link>
+                    </Link>)})}
                 </div>
                 {/* Displays the New Writer UI Component */}
                 <NewWriter />
