@@ -40,7 +40,7 @@ const Story = (props) => {
             <Navigation />
             <div id="story">
                 <div className="story__button__container__back">
-                    <Link to="/not-a-real-link">
+                    <Link to="/feed">
                         <button className="story__button__back">
                             <i className="fas fa-arrow-left"></i>{" "}
                             <span>Back</span>
