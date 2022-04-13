@@ -7,8 +7,7 @@
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     line-height: 4vh;
     padding: 0 8rem 0 8rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 3;

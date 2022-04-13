@@ -278,10 +278,9 @@
           box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   line-height: 4vh;
   padding: 0 8rem 0 8rem;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
